@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
+    <title>Appointments</title>
+</head>
+<h1>Appointments</h1>
+<body>
+    <html>
+        
+        <body>
+        
+        <div class="container">
+        <table id="tbUser">
+        <tr>
+            <th>Name</th><th>Age</th><th>Gender</th><th>Breed</th><th>Service</th><th>Owner's Name</th><th>Contact Number</th></tr>
+        <tr>
+            <td>Scooby</td><td>50</td><td>male</td><td>pitbull</td><td>grooming</td><td>Thomas</td><td>123-123-123</td><td><button class="btnDelete">Delete</button></td></tr>
+        <tr>
+            <td>Benny</td><td>16</td><td>male</td><td>yorkie</td><td>trim nails</td><td>Justine</td><td>235-235-235</td><td><button class="btnDelete">Delete</button></td></tr>
+        <tr>
+            <td>Coco</td><td>20</td><td>female</td><td>poodle</td><td>haircut</td><td>Steph</td><td>565-565-565</td><td><button class="btnDelete">Delete</button></td></tr>
+        <tr>
+            <td>Roscoe</td><td>52</td><td>male</td><td>husky</td><td>grooming</td><td>Christian</td><td>888-888-888</td><td><button class="btnDelete">Delete</button></td></tr>
+        <tr>
+            <td>Bear</td><td>38</td><td>male</td><td>poodle</td><td>trim nails</td><td>Nathan</td><td>777-777-777</td><td><button class="btnDelete">Delete</button></td></tr>
+    </table> 
+    
+      </div>  
+        <script>
+        $(document).ready(function(){
+        
+         $("#tbUser").on('click','.btnDelete',function(){
+               $(this).closest('tr').remove();
+             });
+
+            });
+        
+        
+        </script>
+        </body>
+        </html>
+                     
